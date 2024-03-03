@@ -22,8 +22,8 @@ class WelcomeScene : Scene() {
     private lateinit var instruction: Text
 
     override suspend fun SContainer.sceneInit() {
-        val startImageBitmap = resourcesVfs["buttons/start-btn.png"].readBitmap().mipmaps()
-        val logoBitmap = resourcesVfs["logos/flappybird.png"].readBitmap().mipmaps()
+        val startImageBitmap = resourcesVfs["buttons/start-btn.png"].readBitmap()
+        val logoBitmap = resourcesVfs["logos/flappybird.png"].readBitmap()
         startButton = image(startImageBitmap) {
             anchor(0.5, 0.5)
             position(450, 300)

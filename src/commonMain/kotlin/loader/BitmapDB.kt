@@ -8,7 +8,7 @@ object BitmapDB {
     private val bitmaps = HashMap<String, Bitmap>()
 
     suspend fun loadBitmap(resourcePath: String) {
-        bitmaps[resourcePath] = resourcesVfs[resourcePath].readBitmap().mipmaps()
+        bitmaps[resourcePath] = resourcesVfs[resourcePath].readBitmap()
     }
 
     suspend fun loadBitmaps(resourcePaths: Array<String>) {

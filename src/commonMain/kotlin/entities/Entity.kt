@@ -47,7 +47,7 @@ abstract class Entity(private var bitmap: Bitmap): Collidable, Viewable {
         val resizedBitmap = bitmap.resized(width,
             height,
             scale = ScaleMode.FIT,
-            Anchor(0.5, 0.5)).mipmaps()
+            Anchor(0.5, 0.5))
 
         hitMask = Array(height) { y -> BooleanArray(width) { x -> resizedBitmap.getRgba(x, y).a != 0 } }
     }

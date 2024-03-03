@@ -92,10 +92,10 @@ class PlayScene : Scene() {
     }
 
     private suspend fun showGameOver() {
-        val gameOver = sceneContainer.image(resourcesVfs["images/gameover.png"].readBitmap().mipmaps(), anchor = Anchor(0.5, 0.5)) {
+        val gameOver = sceneContainer.image(resourcesVfs["images/gameover.png"].readBitmap(), anchor = Anchor(0.5, 0.5)) {
             position(MIDDLE_X, MIDDLE_Y + 50)
         }
-        sceneContainer.image(resourcesVfs["buttons/restart-btn.png"].readBitmap().mipmaps(), anchor = Anchor(0.5, 0.5)) {
+        sceneContainer.image(resourcesVfs["buttons/restart-btn.png"].readBitmap(), anchor = Anchor(0.5, 0.5)) {
             scale(0.5, 0.5)
             position(MIDDLE_X, MIDDLE_Y -100)
             onClick {

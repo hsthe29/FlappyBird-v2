@@ -23,7 +23,7 @@ suspend fun main() = Korge(
     multithreaded = true,
 
 ) {
-    val backgroundBitmap = resourcesVfs["images/background.png"].readBitmap().mipmaps()
+    val backgroundBitmap = resourcesVfs["images/background.png"].readBitmap()
     awaitAll(
         async {
             BitmapDB.loadBitmaps(resourcePaths)
