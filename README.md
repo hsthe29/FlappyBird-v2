@@ -15,9 +15,9 @@ This is Flappy Bird game written by Korge game engine.
   - For creating a FatJAR, use the gradle task: `./gradlew packageJvmFatJar`
   - For creating a FatJAR using proguard for thinner sizes, use the gradle task: `./gradlew packageJvmFatJarProguard`
 
-# Deployment
+# Demo
 
-Website: https://hsthe29.github.io/flappybird/
+Demo: https://github.com/hsthe29/hsthe29.github.io/tree/main/flappybird
 
 [//]: # (Build JS: `$ ./gradlew jsBrowserDistribution # Outputs to /build/distributions`)
 
